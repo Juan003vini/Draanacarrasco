@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:title" content="Dermatologista Veterinária em São Paulo | Dra. Ana Carrasco" />
-  <meta property="og:description" content="Especialista em pele animal: alergias, dermatite e alopecia. Tratamentos com Ozonioterapia, Laser e Crioocirurgia. Atendimento em clínica em São Paulo." />
+  <meta property="og:description" content="Especialista em pele animal: alergias, dermatite e alopecia. Tratamentos com Ozonioterapia, Laser e Crioocirurgia. Atendimento em consultório em São Paulo." />
   <meta property="og:image" content="https://draanacarrasco.vercel.app/img/dra-ana-jaleco.jpg" />
   <meta property="og:url" content="https://draanacarrasco.vercel.app/" />
 
@@ -499,45 +499,64 @@
 
     .testimonial-card {
       background: #fff;
-      padding: 36px 32px;
-      border-radius: 4px;
+      padding: 28px 28px;
+      border-radius: 8px;
       border: 1px solid var(--borda);
-      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
 
-    .testimonial-quote {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 60px;
-      color: var(--dourado);
-      line-height: 0.8;
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       margin-bottom: 16px;
-      opacity: 0.5;
+    }
+
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--verde-musgo);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      flex-shrink: 0;
+      letter-spacing: 0.02em;
+    }
+
+    .testimonial-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
     }
 
     .testimonial-text {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--cinza-texto);
-      line-height: 1.75;
-      margin-bottom: 24px;
-      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 16px;
     }
 
     .testimonial-author {
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 600;
-      color: var(--verde-musgo);
+      color: var(--chumbo);
     }
 
     .testimonial-pet {
       font-size: 12px;
       color: var(--cinza-texto);
+      padding-top: 12px;
+      border-top: 1px solid var(--borda);
     }
 
     .stars {
       color: var(--dourado);
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 2px;
-      margin-bottom: 12px;
     }
 
     /* ── CTA FINAL ── */
@@ -697,7 +716,7 @@
 <header>
   <div class="logo">Dra. Ana <span>Carrasco</span></div>
   <div class="header-right">
-    <span class="header-location">📍 Clínica em São Paulo, SP</span>
+    <span class="header-location">📍 Consultório em São Paulo, SP</span>
     <a href="https://wa.me/5511920954890?text=Olá%2C+gostaria+de+agendar+uma+consulta+de+dermatologia+para+meu+pet." class="header-cta" target="_blank">Agendar Consulta</a>
   </div>
 </header>
@@ -707,11 +726,12 @@
   <div class="hero-text">
     <p class="hero-eyebrow">Dermatologista Veterinária · São Paulo · SP</p>
     <h1 class="hero-title">
-      Seu pet com <em>alergia</em>, dermatite<br>
-      ou queda de pelo?
+      Seu pet não para de<br>
+      se <em>coçar</em> ou lambe<br>
+      as patas sem parar?
     </h1>
     <p class="hero-desc">
-      Diagnóstico especializado e tratamento de pele para cães e gatos em São Paulo — com Ozonioterapia, Laser e Crioocirurgia. Atendimento em clínica, com agendamento rápido.
+      Coceira excessiva, lambida nas patas e otites recorrentes são sinais de que algo na pele do seu pet precisa de atenção. Tratamento especializado para cães e gatos em São Paulo, com Medicina Veterinária Integrativa — Ozonioterapia, Laser e Crioocirurgia.
     </p>
 
     <div class="trust-row">
@@ -725,7 +745,7 @@
       </div>
       <div class="trust-item">
         <span class="trust-icon">✓</span>
-        <span>Clínica em São Paulo</span>
+        <span>Consultório em São Paulo</span>
       </div>
     </div>
 
@@ -760,9 +780,9 @@
       <div class="service-icon">🫧</div>
       <h3 class="service-title">Ozonioterapia</h3>
       <p class="service-desc">
-        Uso terapêutico do ozônio para tratar infecções de pele, dermatites resistentes e lesões crônicas. Procedimento minimamente invasivo com alta eficácia antimicrobiana e cicatrizante.
+        Tratamento de Medicina Veterinária Integrativa que usa o ozônio medicinal para tratar infecções de pele, dermatites resistentes, lesões crônicas e Alopecia X — sem anestesia e sem sofrimento pós-procedimento para o paciente.
       </p>
-      <span class="service-tag">Indicado para infecções e feridas</span>
+      <span class="service-tag">Infecções, feridas e Alopecia X</span>
     </div>
 
     <div class="service-card">
@@ -803,9 +823,9 @@
 
     <div class="service-card">
       <div class="service-icon">🐾</div>
-      <h3 class="service-title">Alopecia & Pelagem</h3>
+      <h3 class="service-title">Alopecia X em Spitz</h3>
       <p class="service-desc">
-        Investigação e tratamento de quedas de pelo, falhas na pelagem e alterações no crescimento capilar — especialmente frequentes em Spitz Alemão e raças de dupla camada.
+        Tratamento inovador para a famosa Alopecia X, condição que afeta especialmente Spitz Alemão e raças de dupla camada de pelo. Protocolo com Ozonioterapia, sem anestesia e sem sofrimento pós-procedimento, com excelente resposta na recuperação da pelagem.
       </p>
       <span class="service-tag">Spitz, Husky, Akita e outras raças</span>
     </div>
@@ -828,21 +848,22 @@
   <div class="about-text">
     <p class="section-eyebrow">Quem é a Dra. Ana?</p>
     <h2 class="about-title">
-      Especialista em pele animal<br>
-      <em>com formação e paixão.</em>
+      Cuidado que olha para<br>
+      <em>o todo, não só a coceira.</em>
     </h2>
     <p class="about-desc">
-      A Dra. Ana Carrasco é médica veterinária especialista em Dermatologia e Alergologia Animal, sediada em São Paulo. Com foco em diagnóstico preciso e tratamentos inovadores, ela combina tecnologia de ponta com um cuidado individualizado que vai além da consulta padrão.
+      A Dra. Ana Carrasco é médica veterinária formada pela PUC Minas, especialista em Dermatologia e Alergologia Animal, sediada em São Paulo. Aqui o foco não é apenas tratar a coceira do momento — é entender a saúde do pet como um todo, pensando na qualidade de vida dele e da família.
     </p>
     <p class="about-desc">
-      Conhecida carinhosamente como "a rainha dos Spitz", trata pacientes de diversas raças com os protocolos mais modernos disponíveis na medicina veterinária especializada.
+      Por isso o consultório conta com uma equipe multidisciplinar, incluindo endocrinologia e nutrição veterinária, para um tratamento completo e duradouro. Conhecida com carinho como "a rainha dos Spitz", a Dra. Ana também desenvolveu um protocolo inovador para a Alopecia X, sem anestesia e sem sofrimento pós-procedimento para o paciente.
     </p>
     <ul class="credentials-list">
-      <li><span class="cred-dot"></span>Médica Veterinária — CRMV/SP</li>
+      <li><span class="cred-dot"></span>Médica Veterinária — Graduação pela PUC Minas</li>
       <li><span class="cred-dot"></span>Especialista em Dermatologia e Alergologia Animal</li>
       <li><span class="cred-dot"></span>Sócia ativa da SBDV (Sociedade Brasileira de Dermatologia Veterinária)</li>
-      <li><span class="cred-dot"></span>Formação em Ozonioterapia, Laser Terapêutico e Crioocirurgia</li>
-      <li><span class="cred-dot"></span>Atendimento em São Paulo — SP</li>
+      <li><span class="cred-dot"></span>Medicina Veterinária Integrativa: Ozonioterapia, Laser e Crioocirurgia</li>
+      <li><span class="cred-dot"></span>Equipe com endocrinologia e nutrição veterinária</li>
+      <li><span class="cred-dot"></span>Consultório em São Paulo — SP</li>
     </ul>
   </div>
 </section>
@@ -856,32 +877,44 @@
 
   <div class="testimonials-grid">
     <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <div class="testimonial-quote">"</div>
+      <div class="testimonial-header">
+        <div class="testimonial-avatar">MF</div>
+        <div class="testimonial-info">
+          <div class="testimonial-author">Mariana F.</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
       <p class="testimonial-text">
-        Minha spitz tinha uma alopecia severa há mais de um ano. Depois de iniciar o tratamento com a Dra. Ana, em dois meses o pelo começou a voltar. Resultado incrível!
+        Minha spitz tinha alopecia X há mais de um ano. Depois do tratamento com a Dra. Ana, em dois meses o pelo começou a voltar. Resultado incrível!
       </p>
-      <div class="testimonial-author">Mariana F.</div>
       <div class="testimonial-pet">Tutora da Luna (Spitz Alemão)</div>
     </div>
 
     <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <div class="testimonial-quote">"</div>
+      <div class="testimonial-header">
+        <div class="testimonial-avatar">RA</div>
+        <div class="testimonial-info">
+          <div class="testimonial-author">Ricardo A.</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
       <p class="testimonial-text">
         Meu cachorro tinha dermatite crônica que nenhum veterinário conseguia resolver. A ozonioterapia com a Dra. Ana foi um divisor de águas. Muito atenciosa e competente.
       </p>
-      <div class="testimonial-author">Ricardo A.</div>
       <div class="testimonial-pet">Tutor do Thor (Golden Retriever)</div>
     </div>
 
     <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-      <div class="testimonial-quote">"</div>
+      <div class="testimonial-header">
+        <div class="testimonial-avatar">CR</div>
+        <div class="testimonial-info">
+          <div class="testimonial-author">Camila R.</div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
       <p class="testimonial-text">
         Profissional excepcionalmente dedicada. Explica tudo com clareza, passa segurança e realmente se preocupa com o bem-estar do animal. Não troco por nada.
       </p>
-      <div class="testimonial-author">Camila R.</div>
       <div class="testimonial-pet">Tutora da Mochi (Gata Persa)</div>
     </div>
   </div>
